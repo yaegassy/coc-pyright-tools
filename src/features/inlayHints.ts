@@ -1,9 +1,9 @@
 import {
-  commands,
-  Event,
-  Emitter,
   CancellationToken,
+  commands,
   DocumentSelector,
+  Emitter,
+  Event,
   ExtensionContext,
   Hover,
   InlayHint,
