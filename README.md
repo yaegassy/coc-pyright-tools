@@ -20,6 +20,10 @@ You must have [coc-pyright](https://github.com/fannheyward/coc-pyright) installe
 
 Pylance-like inlay type hints. See: <https://devblogs.microsoft.com/python/python-in-visual-studio-code-july-2022-release/#inlay-type-hints>
 
+**DEMO (mp4)**:
+
+https://user-images.githubusercontent.com/188642/184496855-793312d6-1bfc-4332-a64d-a625c6bba738.mp4
+
 ### (TODO) CodeLens
 
 Running test such as `unittest`, `pytest`, etc.
