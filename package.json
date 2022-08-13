@@ -1,0 +1,86 @@
+{
+  "name": "@yaegassy/coc-pyright-tools",
+  "version": "0.0.1",
+  "description": "coc-pyright-tools is a coc-extension that adds its own functionality to coc-pyright for coc.nvim",
+  "author": "yaegassy <yosstools@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "coc.nvim"
+  ],
+  "engines": {
+    "coc": "^0.0.81"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yaegassy/coc-pyright-tools"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint src --ext ts",
+    "clean": "rimraf lib",
+    "watch": "node esbuild.js --watch",
+    "build": "node esbuild.js",
+    "prepare": "node esbuild.js"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120,
+    "semi": true
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.47",
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "coc.nvim": "0.0.81",
+    "esbuild": "^0.14.54",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  },
+  "activationEvents": [
+    "onLanguage:python"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "coc-pyright-tools configuration",
+      "properties": {
+        "pyright-tools.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable coc-pyright-tools extension"
+        },
+        "pyright-tools.inlayHints.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable inlay hints feature"
+        },
+        "pyright-tools.inlayHints.functionReturnTypes": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable inlay hints for function return types"
+        },
+        "pyright-tools.inlayHints.variableTypes": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable inlay hints for variable types"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "pyright-tools.toggleInlayHints",
+        "title": "Toggle enable/disable inlay hints"
+      }
+    ]
+  },
+  "dependencies": {
+    "@zzzen/pyright-internal": "^1.2.0-dev.20220807"
+  }
+}
