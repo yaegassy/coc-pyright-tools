@@ -7,7 +7,7 @@
 **e.g. vim-plug**:
 
 ```vim
-Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
+Plug 'yaegassy/coc-pyright-tools', {'do': 'yarn install --frozen-lockfile'}
 ```
 
 ### Requirement
