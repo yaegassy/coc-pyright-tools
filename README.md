@@ -30,6 +30,10 @@ https://user-images.githubusercontent.com/188642/184496855-793312d6-1bfc-4332-a6
 
 Running test such as `unittest`, `pytest`, etc.
 
+**DEMO (mp4)**:
+
+https://user-images.githubusercontent.com/188642/184796894-66b622bb-15e5-41f1-9562-42cd46ed7bc6.mp4
+
 ## Commands
 
 - `pyright-tools.toggleInlayHints`: Toggle enable/disable inlay hints
