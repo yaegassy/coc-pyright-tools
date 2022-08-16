@@ -79,6 +79,30 @@
           "default": true,
           "description": "Enable/disable inlay hints for variable types"
         },
+        "pyright-tools.codeLens.enable": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable codelens feature"
+        },
+        "pyright-tools.codeLens.testFramework": {
+          "type": "string",
+          "default": "unittest",
+          "description": "Testing framework used by codelens",
+          "enum": [
+            "unittest",
+            "pytest"
+          ]
+        },
+        "pyright-tools.codeLens.unittestTitle": {
+          "type": "string",
+          "default": ">> [Run unittest]",
+          "description": "CodeLens title. Can be changed to any display."
+        },
+        "pyright-tools.codeLens.pytestTitle": {
+          "type": "string",
+          "default": ">> [Run pytest]",
+          "description": "CodeLens title. Can be changed to any display."
+        },
         "pyright-tools.test.unittestArgs": {
           "type": "array",
           "description": "Arguments passed in. Each argument is a separate item in the array.",

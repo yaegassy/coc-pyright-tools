@@ -1,6 +1,6 @@
 # coc-pyright-tools
 
-`coc-pyright-tools` is a coc-extension that adds its own functionality to [coc-pyright](https://github.com/fannheyward/coc-pyright) for [coc.nvim](https://github.com/neoclide/coc.nvim). Currently the **"Inlay Hints"**, Test Framework commands feature is available.
+`coc-pyright-tools` is a coc-extension that adds its own functionality to [coc-pyright](https://github.com/fannheyward/coc-pyright) for [coc.nvim](https://github.com/neoclide/coc.nvim). Currently the "Inlay Hints", "CodeLens" and "Test Framework commands" feature is available.
 
 ## Install
 
@@ -26,9 +26,13 @@ Check about Pylance inlay type hints. See: <https://devblogs.microsoft.com/pytho
 
 https://user-images.githubusercontent.com/188642/184496855-793312d6-1bfc-4332-a64d-a625c6bba738.mp4
 
-### (TODO) CodeLens
+### CodeLens
 
 Running test such as `unittest`, `pytest`, etc.
+
+**DEMO (mp4)**:
+
+https://user-images.githubusercontent.com/188642/184796894-66b622bb-15e5-41f1-9562-42cd46ed7bc6.mp4
 
 ## Commands
 
@@ -45,6 +49,10 @@ Running test such as `unittest`, `pytest`, etc.
 - `pyright-tools.inlayHints.enable`: Enable/disable inlay hints feature, `true`
 - `pyright-tools.inlayHints.functionReturnTypes`: Enable/disable inlay hints for function return types, default: `true`
 - `pyright-tools.inlayHints.variableTypes`: Enable/disable inlay hints for variable types, default: `true`
+- `pyright-tools.codeLens.enable`: Enable/disable codelens feature, default: `true`
+- `pyright-tools.codeLens.testFramework`: Testing framework used by codelens, valid options `["unittest", "pytest"]`, default: `unittest`
+- `pyright-tools.codeLens.unittestTitle`: CodeLens title. Can be changed to any display, default: `>> [Run unittest]`
+- `pyright-tools.codeLens.pytestTitle`: CodeLens title. Can be changed to any display, default: `>> [Run pytest]`
 - `pyright-tools.test.unittestArgs`: Arguments passed in. Each argument is a separate item in the array, default: `[]`
 - `pyright-tools.test.pytestArgs`: Arguments passed in. Each argument is a separate item in the array, default: `[]`
 - `pyright-tools.terminal.enableSplitRight`: Use vertical belowright for unittest/pytest terminal window, default: `false`
