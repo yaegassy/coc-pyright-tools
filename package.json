@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@types/node": "^16.11.47",
+    "@types/which": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
     "coc.nvim": "0.0.81",
@@ -41,7 +42,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "which": "^2.0.2"
   },
   "activationEvents": [
     "onLanguage:python"
@@ -55,6 +57,12 @@
           "type": "boolean",
           "default": true,
           "description": "Enable coc-pyright-tools extension"
+        },
+        "pyright-tools.python.interpreterPath": {
+          "scope": "resource",
+          "type": "string",
+          "default": "",
+          "description": "Path to the Python interpreter executable. Particularly important if you are using a Python virtual environment. Leave blank to use Python from PATH."
         },
         "pyright-tools.inlayHints.enable": {
           "type": "boolean",
@@ -70,6 +78,29 @@
           "type": "boolean",
           "default": true,
           "description": "Enable/disable inlay hints for variable types"
+        },
+        "pyright-tools.test.unittestArgs": {
+          "type": "array",
+          "description": "Arguments passed in. Each argument is a separate item in the array.",
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "scope": "resource"
+        },
+        "pyright-tools.test.pytestArgs": {
+          "type": "array",
+          "description": "Arguments passed in. Each argument is a separate item in the array.",
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "scope": "resource"
+        },
+        "pyright-tools.terminal.enableSplitRight": {
+          "type": "boolean",
+          "default": false,
+          "description": "Use vertical belowright for unittest/pytest terminal window."
         }
       }
     },
@@ -77,6 +108,22 @@
       {
         "command": "pyright-tools.toggleInlayHints",
         "title": "Toggle enable/disable inlay hints"
+      },
+      {
+        "command": "pyright-tools.unittest.fileTest",
+        "title": "Run unittest for current file"
+      },
+      {
+        "command": "pyright-tools.unittest.singleTest",
+        "title": "Run unittest for single (nearest) test"
+      },
+      {
+        "command": "pyright-tools.pytest.fileTest",
+        "title": "Run pytest for current file"
+      },
+      {
+        "command": "pyright-tools.pytest.singleTest",
+        "title": "Run pytest for single (nearest) test"
       }
     ]
   },
