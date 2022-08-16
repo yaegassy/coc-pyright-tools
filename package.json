@@ -152,6 +152,6 @@
     ]
   },
   "dependencies": {
-    "@zzzen/pyright-internal": "^1.2.0-dev.20220807"
+    "@zzzen/pyright-internal": "^1.2.0-dev.20220814"
   }
 }

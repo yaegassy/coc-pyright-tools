@@ -183,10 +183,10 @@
     "@types/emscripten" "^1.38.0"
     tslib "^1.13.0"
 
-"@zzzen/pyright-internal@^1.2.0-dev.20220807":
-  version "1.2.0-dev.20220807"
-  resolved "https://registry.yarnpkg.com/@zzzen/pyright-internal/-/pyright-internal-1.2.0-dev.20220807.tgz#eacc91595de581aceb8f2001ed0cdec90dc223ee"
-  integrity sha512-HdpcBeqqeKsgZtxK8gD3x6edo86a2n5x/tGUM9KHHK77AhzLO6pRFC6B+9v0rdDsTgqKoEJHy1dPeW5oK6Mvhw==
+"@zzzen/pyright-internal@^1.2.0-dev.20220814":
+  version "1.2.0-dev.20220814"
+  resolved "https://registry.yarnpkg.com/@zzzen/pyright-internal/-/pyright-internal-1.2.0-dev.20220814.tgz#8a5a0404b11441f162c788348c0ef71545a04571"
+  integrity sha512-lrVzfqaERzkYueKc+EEmY9GiLqdgMvPM3h92s6F1r3mDh2aiUhACnjikG7m3SSLoFCG1L4rY+PV5CY13Z6MGEQ==
   dependencies:
     "@iarna/toml" "2.2.5"
     "@yarnpkg/fslib" "2.7.0"
