@@ -1,5 +1,13 @@
 # coc-pyright-tools
 
+## !!WARNING!!
+
+Inlay hints feature of `coc-pyright-tools`, have been ported to `coc-pyright` itself. <https://github.com/fannheyward/coc-pyright/commit/1f36838eaacc0d564946733e847a785709550966>
+
+coc-pyright-tools is no longer maintained
+
+---
+
 `coc-pyright-tools` is a coc-extension that adds its own functionality to [coc-pyright](https://github.com/fannheyward/coc-pyright) for [coc.nvim](https://github.com/neoclide/coc.nvim). Currently the "Inlay Hints", "CodeLens" and "Test Framework commands" feature is available.
 
 ## Install
